@@ -1,0 +1,7 @@
+Step 0 :
+1. Créer la strcture minimale du projet
+index.html avec navbar bootstrap
+libs (bootstrap, jquery, icofont)
+js/css/img (index.js/index.css/logo,favicon etc...)
+app (dossier de l'application avec App.js)
+2. Mettre en place la single page application
