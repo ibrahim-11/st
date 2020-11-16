@@ -1,7 +1,11 @@
-Step 0 :
-1. Créer la strcture minimale du projet
-index.html avec navbar bootstrap
-libs (bootstrap, jquery, icofont)
-js/css/img (index.js/index.css/logo,favicon etc...)
-app (dossier de l'application avec App.js)
-2. Mettre en place la single page application
+Step 1 :
+1. Mettre en place la base de données
+Création de la base
+Création des tables
+Insertion de données pour les tests : tables product et category
+https://mockaroo.com/
+2. Créer une classe pour l'envoi des requettes Ajax vers l'Api Rest
+3. Créer le fichier index.php de l'Api Rest qui recéptionnera les requêtes Ajax
+Dans un premier temps le fichier index.php renvoi ce qu'il a reçu
+4. Tester les nouvelles fonctionnalités
+Attention aux infos indispensables pour les requêtes sur la DB !
