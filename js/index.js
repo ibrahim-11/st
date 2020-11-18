@@ -1,42 +1,24 @@
-//App.start();
+// App.start();
 
-//Test API Rest
+//Test API Rest (1 à la  fois)
 
-Rest.get({
-    table: "product",
-    id: 0,
-    where: "active = true",
-    orderby: "title ASC"
-}).done((resp) => {
+Rest.get("product",1,"active=true","title ASC").done((resp) => {
     $('#main').hide().html(resp).fadeIn();
+    $('#main p').css({
+        'color':'red',
+        'border':'2px solid black'
+    });
 })
 
-Rest.post({
-    table: "product",
-    fields: {
-        title: "titre du produit",
-        active: true,
-        onsale: false
-    }
-}).done((resp) => {
-    $('#main').hide().html(resp).fadeIn();
-})
 
-Rest.put({
-    table: "product",
-    id: 1,
-    fields: {
-        title: "titre du produit",
-        active: true,
-        onsale: false
-    }
-}).done((resp) => {
-    $('#main').hide().html(resp).fadeIn();
-})
+// Rest.post("product","gravier","granulat").done((resp) => {
+//     $('#main').hide().html(resp).fadeIn();
+// })
 
-Rest.delete({
-    table: "product",
-    id: 1
-}).done((resp) => {
-    $('#main').hide().html(resp).fadeIn();
-})
+// Rest.put({"product",2,"true","ciment","malaxage"}).done((resp) => {
+//     $('#main').hide().html(resp).fadeIn();
+// })
+
+// Rest.delete(/* ... */).done((resp) => {
+//     $('#main').hide().html(resp).fadeIn();
+// })
